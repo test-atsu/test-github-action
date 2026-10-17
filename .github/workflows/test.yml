@@ -6,4 +6,7 @@ jobs:
   echo_hello_world:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello world!!"
+      - name: Greetings
+        run: echo "hello world!!"
+      - name: make
+        run: make run
