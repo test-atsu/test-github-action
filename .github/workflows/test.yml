@@ -11,6 +11,6 @@ jobs:
       - name: Check current directory
         run: pwd
       - name: Check files in current directory
-        run: ls -al
+        run: ls -al; ls -al ../
       - name: compile
         run: gcc -o main src/main.c
