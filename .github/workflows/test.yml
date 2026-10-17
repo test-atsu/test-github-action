@@ -9,4 +9,4 @@ jobs:
       - name: Greetings
         run: echo "hello world!!"
       - name: make
-        run: make run
+        run: make
