@@ -3,14 +3,12 @@ name: GitHub Actions Demo
 on: [push]
 
 jobs:
-  echo_hello_world:
+  make_test:
     runs-on: ubuntu-latest
     steps:
       - name: Greetings
-        run: echo "hello world!!"
-      - name: Check current directory
-        run: pwd
-      - name: Check files in current directory
-        run: ls -al; ls -al ../
+        run: echo "Hello world!!"
+      - name: Checkout
+        uses: actions/checkout@v7
       - name: compile
-        run: gcc -o main src/main.c
+        run: make run
